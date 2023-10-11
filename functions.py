@@ -1,7 +1,7 @@
 import time
 import os
 
-FILEPATH = 'files/todos.txt'
+FILEPATH = 'todos.txt'
 if not os.path.exists(FILEPATH): 
     with open(FILEPATH, 'w'):
         pass

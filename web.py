@@ -1,7 +1,7 @@
 
 # import streamlit.components.v1 as components
 import streamlit as st
-from modules.functions import *
+from functions import *
 
 mod_time, item_lst = read_list()
 
@@ -66,7 +66,8 @@ for index, item in enumerate(item_lst):
 #               args=(item_lst, st.session_state['add_item']))
 
 st.text_input(label='Default label', placeholder='Add a new to-do...',
-              key='input', on_change=add_todo)
+              key='input', on_change=add_todo,
+              label_visibility='collapsed')
 
 # prints the 'session_state' object to the webpage for development purposes
-st.session_state
+# st.session_state
